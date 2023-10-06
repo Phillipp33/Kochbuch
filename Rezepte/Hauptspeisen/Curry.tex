@@ -1,49 +1,52 @@
-% Complete recipe example
 \begin{recipe}
-[% 
-    preparationtime = {\unit[0.5]{h}},
-    bakingtime={\unit[1]{h}},
-    portion = {\portion{5-6}},
-    %calory={\unit[3]{kJ}},
-    source = {Erfahrung}
-]
-{Test Recipe}
-    
-    \graph
-    {% pictures
-        small=pic/glass,     % small picture
-        big=pic/ingredients  % big picture
-    }
-    
-    \introduction{%
-        \blindtext
-    }
-    
-    \ingredients{%
-        2 bar & Dark Chocolate (above \unit[70]{\%})\\
-        3 & Eggs\\
-        \unit[200]{ml} & Cream\\
-        40 g & Sugar\\
-        50 g & Butter
-    }
-    
-    \preparation{%
-        \step \blindtext
-        \step \blindtext
-        \step \blindtext
-    }
-    
-    \suggestion[Headline]
-    {%
-        \blindtext
-    }
-    
-    \suggestion{%
-        \blindtext
-    }
-    
-    \hint{%
-        Enjoy typesetting recipes with {\textbf{\Large\LaTeX}} and {\textbf{\Large xcookybooky!}}
-    }
-    
+	[% 
+	preparationtime = {\unit[0.5]{h}},
+	bakingtime={\unit[45]{min}},
+	portion = {\portion{4-5}},
+	]
+	{Einfaches Curry}
+	
+	\graph
+	{% pictures
+		small=pic/Food_template,     % small picture (Replace with your picture)
+		big=pic/Food_template  % big picture (Replace with your picture)
+	}
+	
+	\introduction{%
+		Ein einfaches Curry das mit einer hausgemachten Paste zubereitet wird und mit allen möglichen zusätzlichen Gemüsen oder Fleisch zubereitet werden kann.
+	}
+	
+	\ingredients{%
+		1 & Ingwer (ca. 5 cm Stück)\\
+		1 & Chili (Individuelle Schärfe)\\
+		2 & Schalotten\\
+		2 TL & Currypulver\\
+		\unit[2]{EL} & Olivenöl\\
+		2 & Zitronengras\\
+		2 & Zwiebeln, gewürfelt\\
+		\unit[400]{ml} & Kokosmilch\\
+		\unit[400]{ml} & Brühe\\
+		\unit[500]{g} & Hühnerbrust\\
+		\unit[500]{g} & Gemüse nach Wahl\\
+		\unit[300]{g} & Reis/Linsen
+	}
+	
+	\preparation{%
+		\step Ingwer, Chili, Schalotten, Currypulver, Öl und Zitronengras in einem Mixer pürieren, bis eine glatte Paste entsteht.
+		\step Die Paste in einem Topf oder einer Pfanne anbraten und die gewürfelte Zwiebel hinzufügen. Weiter anbraten, bis die Zwiebeln durchsichtig sind. Übrige Paste kann etwa eine Woche im Kühlschrank aufbewahrt werden.
+		\step Hühnchen in glasigen Zwiebeln legen und auf den Boden der Pfanne drücken. Für die vegane Variante diesen Schritt überspringen
+		\step Kokosmilch hinzugeben, wenn keine Brühe vorhanden ist kann ein Brühwürfel mit heißem Wasser hinzugegeben werden. 
+		\step Restliches Gemüse hinzugeben
+		\step 20 Minuten vor Ende Reis waschen, in kaltem Wasser aufkochen und dann 15 Minuten mit Deckel ziehen lassen bis sämtliches Wasser verkocht ist. Alternativ das Curry 15-20 Minuten kochen bis das Gemüse fast gar ist, und die Linsen ins Curry geben. 
+	}
+	
+	\suggestion[Serviervorschlag]
+	{%
+		Das Curry mit dem gekochten Reis servieren, oder den Reis durch Naan-Brot ersetzen. 
+	}
+	
+	\hint{%
+		Gute weitere Zutaten für das Curry sind alle möglichen Gemüsesorten: Brokkoli, Blumenkohl, Süßkartoffeln, Babyspinat etc.\\Mein Favorit ist Hühnchen, Brokkoli, Rote Linsen und Babyspinat
+	}
+	
 \end{recipe}

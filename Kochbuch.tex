@@ -1,0 +1,40 @@
+\documentclass[%
+a4paper,
+%twoside,
+11pt
+]{article}
+\input{preamble/01_includes}
+\input{preamble/02_defines}
+\input{preamble/03_styles}
+
+\begin{document}
+
+\title{\textbf{Das Langweilige Kochbuch}}
+\author{Phillipp Hendrys}%\\ \href{mailto:sven\_one1@gmx.de}{sven\_one1@gmx.de}}
+\maketitle
+
+\begin{abstract}
+    \noindent Das ist ein Kochbuch bei dem ich, hoffentlich, regelmäßig die Gerichte ergänze die ich gerne Koche.
+\end{abstract}
+
+\tableofcontents
+
+\vspace{5em}
+
+\section{Hauptspeisen}
+
+\include{Rezepte/Hauptspeisen/Curry}
+\section{Nachspeisen}
+%Rezeptsammlung von aus Überall her!
+
+% background graphic % Same for the whole book?
+%\setBackgroundPicture[x, y=-2cm, width=\paperwidth-4cm, height, orientation = pagecenter]
+%{pic/background}
+
+\include{Rezepte/Nachspeisen/Mousse_au_Chocolat}
+
+
+
+%\include{tex/Complete_Recipe}
+
+\end{document} 
