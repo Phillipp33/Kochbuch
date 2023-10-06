@@ -1,0 +1,28 @@
+\DeclareRobustCommand{\textcelcius}{\ensuremath{^{\circ}\mathrm{C}}}
+
+
+\setcounter{secnumdepth}{1}
+\renewcommand*{\recipesection}[2][]
+{%
+	\subsection[#1]{#2}
+}
+\renewcommand{\subsectionmark}[1]
+{% no implementation to display the section name instead
+}
+
+\hbadness=10000	% Ignore underfull boxes
+
+% NEW
+\renewcommand{\step}
+{%
+	\stepcounter{step}%shouldn't be in the argument of lettrine
+	\lettrine
+	[%
+	lines=2,
+	lhang=0,          % space into margin, value between 0 and 1
+	loversize=0.15,   % enlarges the height of the capital
+	slope=0em,
+	findent=1em,      % gap between capital and intended text
+	nindent=0em       % shifts all intended lines, begining with the second line
+	]{\thestep}{}%
+}
